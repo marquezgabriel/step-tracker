@@ -61,7 +61,6 @@ struct HealthDataListView: View {
             }
         }
     }
-    
 }
 
 #Preview {
