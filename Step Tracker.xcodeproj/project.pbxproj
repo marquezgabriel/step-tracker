@@ -12,6 +12,8 @@
 		BA3D13F62BE1BE51003E9075 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA3D13F52BE1BE51003E9075 /* Assets.xcassets */; };
 		BA3D13F92BE1BE51003E9075 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA3D13F82BE1BE51003E9075 /* Preview Assets.xcassets */; };
 		BA9C5B522BE64B7900BD4E96 /* HealthDataListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9C5B512BE64B7900BD4E96 /* HealthDataListView.swift */; };
+		BA9C5B542BE6ADD900BD4E96 /* HealthKitPermissionPrimingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9C5B532BE6ADD900BD4E96 /* HealthKitPermissionPrimingView.swift */; };
+		BA9C5B582BE6C14700BD4E96 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9C5B572BE6C14700BD4E96 /* HealthKitManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,10 @@
 		BA3D13F52BE1BE51003E9075 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA3D13F82BE1BE51003E9075 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BA9C5B512BE64B7900BD4E96 /* HealthDataListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDataListView.swift; sourceTree = "<group>"; };
+		BA9C5B532BE6ADD900BD4E96 /* HealthKitPermissionPrimingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitPermissionPrimingView.swift; sourceTree = "<group>"; };
+		BA9C5B552BE6BEEE00BD4E96 /* Step Tracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Step Tracker.entitlements"; sourceTree = "<group>"; };
+		BA9C5B562BE6BFF400BD4E96 /* Step-Tracker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Step-Tracker-Info.plist"; sourceTree = SOURCE_ROOT; };
+		BA9C5B572BE6C14700BD4E96 /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,9 +59,13 @@
 		BA3D13F02BE1BE50003E9075 /* Step Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				BA9C5B562BE6BFF400BD4E96 /* Step-Tracker-Info.plist */,
+				BA9C5B552BE6BEEE00BD4E96 /* Step Tracker.entitlements */,
 				BA3D13F12BE1BE50003E9075 /* Step_TrackerApp.swift */,
 				BA3D13F32BE1BE50003E9075 /* DashboardView.swift */,
+				BA9C5B532BE6ADD900BD4E96 /* HealthKitPermissionPrimingView.swift */,
 				BA9C5B512BE64B7900BD4E96 /* HealthDataListView.swift */,
+				BA9C5B572BE6C14700BD4E96 /* HealthKitManager.swift */,
 				BA3D13F52BE1BE51003E9075 /* Assets.xcassets */,
 				BA3D13F72BE1BE51003E9075 /* Preview Content */,
 			);
@@ -143,6 +153,8 @@
 				BA9C5B522BE64B7900BD4E96 /* HealthDataListView.swift in Sources */,
 				BA3D13F42BE1BE50003E9075 /* DashboardView.swift in Sources */,
 				BA3D13F22BE1BE50003E9075 /* Step_TrackerApp.swift in Sources */,
+				BA9C5B582BE6C14700BD4E96 /* HealthKitManager.swift in Sources */,
+				BA9C5B542BE6ADD900BD4E96 /* HealthKitPermissionPrimingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,14 +285,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Step Tracker/Step Tracker.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Step Tracker/Preview Content\"";
 				DEVELOPMENT_TEAM = ZVH6XSDGG7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Step-Tracker-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Step Tracker";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "The app shows your step and weight data in an interactive chart.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "The app allows you to add step and weight data to Apple Health.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,14 +320,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Step Tracker/Step Tracker.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Step Tracker/Preview Content\"";
 				DEVELOPMENT_TEAM = ZVH6XSDGG7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Step-Tracker-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Step Tracker";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "The app shows your step and weight data in an interactive chart.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "The app allows you to add step and weight data to Apple Health.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
