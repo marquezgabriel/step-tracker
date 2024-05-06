@@ -14,6 +14,7 @@
 		BA9C5B522BE64B7900BD4E96 /* HealthDataListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9C5B512BE64B7900BD4E96 /* HealthDataListView.swift */; };
 		BA9C5B542BE6ADD900BD4E96 /* HealthKitPermissionPrimingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9C5B532BE6ADD900BD4E96 /* HealthKitPermissionPrimingView.swift */; };
 		BA9C5B582BE6C14700BD4E96 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9C5B572BE6C14700BD4E96 /* HealthKitManager.swift */; };
+		BAFAAEDD2BE97A6C00F133A0 /* HealthMetric.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAFAAEDC2BE97A6C00F133A0 /* HealthMetric.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		BA9C5B552BE6BEEE00BD4E96 /* Step Tracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Step Tracker.entitlements"; sourceTree = "<group>"; };
 		BA9C5B562BE6BFF400BD4E96 /* Step-Tracker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Step-Tracker-Info.plist"; sourceTree = SOURCE_ROOT; };
 		BA9C5B572BE6C14700BD4E96 /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
+		BAFAAEDC2BE97A6C00F133A0 /* HealthMetric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthMetric.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				BA9C5B552BE6BEEE00BD4E96 /* Step Tracker.entitlements */,
 				BA3D13F12BE1BE50003E9075 /* Step_TrackerApp.swift */,
 				BA3D13F32BE1BE50003E9075 /* DashboardView.swift */,
+				BAFAAEDC2BE97A6C00F133A0 /* HealthMetric.swift */,
 				BA9C5B532BE6ADD900BD4E96 /* HealthKitPermissionPrimingView.swift */,
 				BA9C5B512BE64B7900BD4E96 /* HealthDataListView.swift */,
 				BA9C5B572BE6C14700BD4E96 /* HealthKitManager.swift */,
@@ -155,6 +158,7 @@
 				BA3D13F22BE1BE50003E9075 /* Step_TrackerApp.swift in Sources */,
 				BA9C5B582BE6C14700BD4E96 /* HealthKitManager.swift in Sources */,
 				BA9C5B542BE6ADD900BD4E96 /* HealthKitPermissionPrimingView.swift in Sources */,
+				BAFAAEDD2BE97A6C00F133A0 /* HealthMetric.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
