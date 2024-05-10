@@ -77,6 +77,7 @@ import Observation
     }
     
     
+// This fucntion is used to add Health Data
     
     //    func addSimulatorData() async {
     //        var mockSamples: [HKQuantitySample] = []
