@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BA2AC2F02BEE9ED1000A20BA /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = BA2AC2EF2BEE9ED1000A20BA /* Algorithms */; };
+		BA3AF9622BF2B82B0030B2EE /* StepPieChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3AF9612BF2B82B0030B2EE /* StepPieChart.swift */; };
 		BA3D13F22BE1BE50003E9075 /* Step_TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3D13F12BE1BE50003E9075 /* Step_TrackerApp.swift */; };
 		BA3D13F42BE1BE50003E9075 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA3D13F32BE1BE50003E9075 /* DashboardView.swift */; };
 		BA3D13F62BE1BE51003E9075 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA3D13F52BE1BE51003E9075 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA3AF9612BF2B82B0030B2EE /* StepPieChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepPieChart.swift; sourceTree = "<group>"; };
 		BA3D13EE2BE1BE50003E9075 /* Step Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Step Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA3D13F12BE1BE50003E9075 /* Step_TrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step_TrackerApp.swift; sourceTree = "<group>"; };
 		BA3D13F32BE1BE50003E9075 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				BA8C98422BEDFF82007FB59F /* StepBarChart.swift */,
+				BA3AF9612BF2B82B0030B2EE /* StepPieChart.swift */,
 				BA8C98492BEE0C95007FB59F /* ChartMath.swift */,
 				BA8C984B2BEE0CF5007FB59F /* ChartDataTypes.swift */,
 			);
@@ -222,6 +225,7 @@
 				BA8C984A2BEE0C95007FB59F /* ChartMath.swift in Sources */,
 				BAFAAEDD2BE97A6C00F133A0 /* HealthMetric.swift in Sources */,
 				BA8C984C2BEE0CF5007FB59F /* ChartDataTypes.swift in Sources */,
+				BA3AF9622BF2B82B0030B2EE /* StepPieChart.swift in Sources */,
 				BA8C984F2BEE0F2A007FB59F /* Date+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
