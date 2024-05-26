@@ -62,7 +62,7 @@ struct DashboardView: View {
                 
                 await hkManager.fetchStepCount()
                 await hkManager.fetchWeights()
-                ChartMath.averageWeekdayCount(for: hkManager.stepData)
+                ChartMath.averageDailyWeightDiffs(for: hkManager.weightDiffData)
                 isShowingPermissionPrimingSheet = !hasSeenPermissionPriming
             }
             .navigationTitle("Dashboard")
