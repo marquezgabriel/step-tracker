@@ -5,8 +5,8 @@
 //  Created by Gabriel Marquez on 2024-04-30.
 //
 
-import SwiftUI
 import Charts
+import SwiftUI
 
 enum HealthMetricContext: CaseIterable, Identifiable {
     case steps, weight//, calories

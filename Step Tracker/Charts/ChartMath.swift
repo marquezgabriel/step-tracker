@@ -5,8 +5,8 @@
 //  Created by Gabriel Marquez on 2024-05-10.
 //
 
-import Foundation
 import Algorithms
+import Foundation
 
 struct ChartMath {
     

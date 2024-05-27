@@ -5,8 +5,8 @@
 //  Created by Gabriel Marquez on 2024-05-17.
 //
 
-import SwiftUI
 import Charts
+import SwiftUI
 
 struct WeightLineChart: View {
     
