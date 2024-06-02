@@ -5,8 +5,8 @@
 //  Created by Gabriel Marquez on 2024-05-10.
 //
 
-import Algorithms
 import Foundation
+import Algorithms
 
 struct ChartMath {
 
@@ -30,7 +30,7 @@ struct ChartMath {
     static func averageDailyWeightDiffs(for weights: [HealthMetric]) -> [WeekdayChartData] {
         var diffValues: [(date: Date, value: Double)] = []
 
-        for i in 0..<weights.count {
+        for i in 1..<weights.count {
             let date = weights[i].date
             let diff = weights[i].value - weights[i - 1].value
             diffValues.append((date: date, value: diff))

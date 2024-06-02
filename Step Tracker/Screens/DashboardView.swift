@@ -18,8 +18,6 @@ enum HealthMetricContext: CaseIterable, Identifiable {
             return "Steps"
         case .weight:
             return "Weight"
-            //        case .calories:
-            //            return "Calories"
         }
     }
 }
@@ -50,6 +48,7 @@ struct DashboardView: View {
                         StepPieChart(chartData: ChartMath.averageWeekdayCount(for: hkManager.stepData))
                     case .weight:
                         WeightLineChart(selectedStat: selectedStat, chartData: hkManager.weightData)
+                        WeightDiffBarChart(chartData: ChartMath.averageDailyWeightDiffs(for: hkManager.weightDiffData))
                     }
                     
                     
@@ -57,12 +56,12 @@ struct DashboardView: View {
             }
             .padding()
             .task {
-                // Enble this line to add Health Data
+                // Enble this line here below to add Health Data:
 //                await hkManager.addSimulatorData()
                 
                 await hkManager.fetchStepCount()
                 await hkManager.fetchWeights()
-                ChartMath.averageDailyWeightDiffs(for: hkManager.weightDiffData)
+                await hkManager.fetchWeightForDifferentials()
                 isShowingPermissionPrimingSheet = !hasSeenPermissionPriming
             }
             .navigationTitle("Dashboard")
