@@ -5,8 +5,8 @@
 //  Created by Gabriel Marquez on 2024-04-30.
 //
 
-import SwiftUI
 import Charts
+import SwiftUI
 
 enum HealthMetricContext: CaseIterable, Identifiable {
     case steps, weight//, calories
@@ -18,8 +18,6 @@ enum HealthMetricContext: CaseIterable, Identifiable {
             return "Steps"
         case .weight:
             return "Weight"
-            //        case .calories:
-            //            return "Calories"
         }
     }
 }
@@ -44,20 +42,26 @@ struct DashboardView: View {
                     }
                     .pickerStyle(.segmented)
                     
-                    StepBarChart(selectedStat: selectedStat, chartData: hkManager.stepData)
-                    StepPieChart(chartData: ChartMath.averageWeekdayCount(for: hkManager.stepData))
+                    switch selectedStat {
+                    case .steps:
+                        StepBarChart(selectedStat: selectedStat, chartData: hkManager.stepData)
+                        StepPieChart(chartData: ChartMath.averageWeekdayCount(for: hkManager.stepData))
+                    case .weight:
+                        WeightLineChart(selectedStat: selectedStat, chartData: hkManager.weightData)
+                        WeightDiffBarChart(chartData: ChartMath.averageDailyWeightDiffs(for: hkManager.weightDiffData))
+                    }
+                    
+                    
                 }
             }
             .padding()
             .task {
-                // Enble this line to add Health Data
+                // Enble this line here below to add Health Data:
 //                await hkManager.addSimulatorData()
                 
-                //                await hkManager.fetchStepCount()
-                //                await hkManager.fetchWeights()
-                
                 await hkManager.fetchStepCount()
-                ChartMath.averageWeekdayCount(for: hkManager.stepData)
+                await hkManager.fetchWeights()
+                await hkManager.fetchWeightForDifferentials()
                 isShowingPermissionPrimingSheet = !hasSeenPermissionPriming
             }
             .navigationTitle("Dashboard")

@@ -5,8 +5,8 @@
 //  Created by Gabriel Marquez on 2024-05-04.
 //
 
-import SwiftUI
 import HealthKitUI
+import SwiftUI
 
 struct HealthKitPermissionPrimingView: View {
     

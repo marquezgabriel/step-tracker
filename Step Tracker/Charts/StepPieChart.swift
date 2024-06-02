@@ -5,8 +5,8 @@
 //  Created by Gabriel Marquez on 2024-05-13.
 //
 
-import SwiftUI
 import Charts
+import SwiftUI
 
 struct StepPieChart: View {
     
@@ -80,5 +80,5 @@ struct StepPieChart: View {
 }
 
 #Preview {
-    StepPieChart(chartData: ChartMath.averageWeekdayCount(for: HealthMetric.mockData))
+    StepPieChart(chartData: ChartMath.averageWeekdayCount(for: MockData.steps))
 }
